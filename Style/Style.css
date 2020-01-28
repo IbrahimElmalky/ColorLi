@@ -1,0 +1,896 @@
+@font-face {
+    font-family: heading;
+    src: url("../Fonts/Cabin-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: heading;
+    font-weight: lighter;
+}
+
+:root {
+    font-size: 10px;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+input[type="submit"], a[type="button"] {
+    padding: 1.3rem 4rem;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 2.2rem 2.2rem 2.2rem 0;
+    background-color: transparent;
+    border: 0.2rem solid white;
+    text-decoration: none;
+}
+
+section {
+    padding: 10rem 0rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 3.2rem;
+    color: #5b32b4;
+}
+
+h2::after {
+    content: " ";
+    width: 6rem;
+    height: 0.2rem;
+    line-height: 1px;
+    background-color: #fc3b7e;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+i {
+    font-size: 3.5rem;
+    color: #fb397d;
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: #5b32b4;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: gray;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+/* End of Public Classes */
+
+/* Start Main Section */
+
+main {
+    background-image: url(../Assets/bg-img/welcome-bg.png);
+    background-position: bottom;
+    height: 140vh;
+}
+
+main header {
+    width: 100%;
+    position: fixed;
+    background-color: #7C4FE1;
+    z-index: 999;
+}
+
+main header .container {
+    display: flex;
+}
+
+main header .container h6 {
+    font-size: 6.6rem;
+    margin-right: auto;
+    color: white;
+}
+
+main header .container nav ul {
+    display: flex;
+}
+
+main header .container nav ul li {
+    list-style: none;
+}
+
+main header .container nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1em;
+    display: inline;
+    color: white;
+    font-weight: bold;
+}
+
+main header .container .header__sign__up {
+    margin-left: 5rem;
+}
+
+main .container .details {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+main .container .details .details__all-text {
+    width: 50%;
+}
+
+main .container .details .details__all-text h3 {
+    font-size: 35rem;
+    color: white;
+    opacity: 0.2;
+    position: absolute;
+    top: 32.5rem;
+    left: 4rem;
+    line-height: 1rem;
+    font-weight: bold;
+}
+
+main .container .details .details__form {
+    position: absolute;
+    top: 26rem;
+    left: 8rem;
+}
+
+main .container .details .details__form h1 {
+    font-size: 8rem;
+    color: white;
+    margin: 2rem 0 0 0;
+}
+
+main .container .details .details__form p {
+    font-size: 1.5rem;
+    color: white;
+    margin: 2rem 0 10rem 0rem;
+}
+
+main .container .details .details__form input[type="ematil"] {
+    font-size: 1.5rem;
+    color: white;
+    background: #9572e8 !important;
+    margin: 2rem 0 10rem 0rem;
+    border-radius: 30rem;
+    border: none;
+    background: transparent;
+    padding: 1em 2em 1em 1em;
+    margin-right: 1rem;
+}
+
+main .container .details .details__form ::placeholder {
+    color: white;
+    opacity: 0.4;
+}
+
+main .container .details .details__form input[type="submit"] {
+    background-color: #fc3b7e;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main .container .details .details__mobile {
+    width: 50%;
+}
+
+main .container .details .details__mobile figure {
+    width: 45%;
+    position: absolute;
+    bottom: -40rem;
+}
+
+main .container .details .details__mobile figure img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* End Main Section */
+
+/* Start Special Section */
+
+.special .container .all__special-sections {
+    display: flex;
+    margin-top: 7rem;
+}
+
+.special .container .all__special-sections .special__section {
+    flex: 0 0 31%;
+    border: solid 0.1rem #eff2f6;
+    border-radius: 4rem 4rem 4rem 0;
+    padding: 4rem;
+    margin: 0 1.8rem;
+}
+
+.special .container .all__special-sections .special__section p {
+    color: gray;
+    text-align: center;
+}
+
+.special .container .all__special-sections .special__section .special__section-icon {
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* End Of Special Section */
+
+/* Start Propositions Section */
+
+.propositions .container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.propositions .container .propositions__photo {
+    flex: 0 0 60%;
+    object-fit: contain;
+}
+
+.propositions .container .propositions__photo img {
+    width: 70%;
+}
+
+.propositions .container .propositions__details {
+    flex: 0 0 40%;
+}
+
+.propositions .container .propositions__details h3 {
+    font-size: 4.8rem;
+}
+
+.propositions .container .propositions__details p {
+    text-align: left;
+    color: gray;
+}
+
+.propositions .container .propositions__details .mobile__store {
+    display: flex;
+}
+
+.propositions .container .propositions__details .mobile__store a[type="button"] {
+    border: 1px solid #ddd;
+    border-radius: 5rem 5rem 5rem 0;
+    padding: 1.5rem 3rem 1.5rem 2rem;
+    margin: 4rem 2rem 0 0;
+    box-shadow: rgba(0, 0, 0, 0.068) 0 0 2rem .5rem;
+}
+
+.propositions .container .propositions__details .mobile__store a[type="button"]:hover {
+    background-color: #fb397d;
+    transition: 0.5s;
+}
+
+.propositions .container .propositions__details .mobile__store a[type="button"]:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.propositions .container .propositions__details .mobile__store a[type="button"]:hover p {
+    color: white;
+    transition: 0.5s;
+}
+
+.propositions .container .propositions__details .mobile__store a[type="button"] i {
+    margin-right: .8rem;
+}
+
+.propositions .container .propositions__details .mobile__store a[type="button"] span {
+    font-size: 1.3rem;
+    display: block;
+}
+
+.propositions .container .propositions__details .mobile__store a[type="button"] p {
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    width: 100%;
+}
+
+.propositions .container .propositions__details .mobile__store a[type="button"] .store {
+    display: flex;
+}
+
+/* End Of Propositions Section */
+
+/* Start Awesome Features Section */
+
+.features {
+    padding: 0rem;
+}
+
+.features .container .all__features {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7rem 0 0 0;
+}
+
+.features .container .all__features .feature {
+    flex: 0 0 33.33%;
+    margin-bottom: 5rem;
+    padding: 0 2.1rem
+}
+
+.features .container .all__features .feature .feature__icon {
+    display: flex;
+}
+
+.features .container .all__features .feature .feature__icon i {
+    margin-right: 0.8rem;
+}
+
+.features .container .all__features .feature p {
+    text-align: left;
+    color: gray;
+}
+
+/* End Of Awesome Features Section */
+
+/* Start Play Video Section */
+
+.play__video {
+    padding: 3rem 0rem 0rem 0rem;
+}
+
+.play__video .container .video {
+    height: 65rem;
+    width: 95%;
+    border-radius: 2rem;
+    display: block;
+    margin: 0 auto;
+    background-image: url("../Assets/bg-img/video.jpg");
+    background-position: center;
+    box-shadow: 0rem 0rem 2rem rgba(194, 194, 194, 0.575);
+    border: 1.5rem solid white;
+    position: relative;
+    z-index: 2;
+}
+
+.play__video .container .video a {
+    background-color: #fb397d;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 5rem;
+    padding: 3.2rem 0px 0px 3.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.play__video .container .video a i {
+    color: white;
+    display: inline-block;
+}
+
+/* End Of Play Video Section */
+
+/* Start Video Details */
+
+.play__video-details {
+    background-color: #5b32b4;
+    padding: 18rem 0 8rem 0;
+    position: relative;
+    top: -10rem;
+    z-index: 0;
+}
+
+.all__statics {
+    display: flex;
+}
+
+.play__video-details .container .details {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.play__video-details .container .details span {
+    font-size: 7rem;
+    color: white;
+    margin-right: 2rem;
+    align-self: flex-end;
+}
+
+.play__video-details .container .details .more__details {
+    display: flex;
+    flex-direction: column;
+}
+
+.play__video-details .container .details .more__details i {
+    justify-content: center;
+    color: white;
+}
+
+.play__video-details .container .details .more__details p {
+    font-size: 1.7rem;
+    color: white;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.play__video-details .container .details .more__details span {
+    font-size: 1.7rem;
+    display: block;
+}
+
+/* End Of Video Details */
+
+/* Start Screenshots */
+
+.screenshots {
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+}
+
+.screenshots .container .screenshots__imgs {
+    display: flex;
+    margin: 8rem 0 5rem 0;
+}
+
+.screenshots .container .screenshots__imgs figure {
+    display: flex;
+    justify-content: center;
+}
+
+.screenshots .container .screenshots__imgs figure img {
+    width: 70%;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.screenshots .container .screenshots__imgs figure:hover img {
+    width: 85%;
+    object-fit: contain;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.screenshots .container .image__dots ul {
+    display: flex;
+    justify-content: center;
+}
+
+.screenshots .container .image__dots ul li {
+    margin: 0 1rem;
+    list-style: none;
+}
+
+.screenshots .container .image__dots ul li::after {
+    content: " ";
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 0.2rem gray;
+    width: 1rem;
+    height: 1em;
+    display: block;
+    margin: 0 auto;
+}
+
+.screenshots .container .image__dots ul li:nth-child(3) {
+    background-color: #fc3b7e;
+    border-radius: 50%;
+}
+
+/* End Of Screenshots */
+
+/* Start Pricing Plan */
+
+.pricing__plan {
+    font-size: 1.8rem;
+    background-color: #F5F9FC;
+}
+
+.pricing__plan .all__plans {
+    display: flex;
+}
+
+.pricing__plan .all__plans .plan {
+    width: 25%;
+    text-align: center;
+    margin: 4rem 0.1rem 0rem 0.1rem;
+    color: gray;
+}
+
+.pricing__plan .all__plans .plan .plan__details .price {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.pricing__plan .all__plans .plan .plan__details ul li {
+    list-style: none;
+    padding: 2rem;
+    margin: .2rem 0;
+    background-color: white;
+}
+
+.pricing__plan .all__plans .plan .plan__details ul li h4 {
+    font-size: 2.2rem;
+    color: #5b32b4;
+    padding-top: 4rem;
+}
+
+.pricing__plan .all__plans .plan .plan__details ul li sup {
+    color: #fc3b7e;
+}
+
+.pricing__plan .all__plans .plan .plan__details ul li span {
+    color: #fc3b7e;
+    font-size: 5.2rem;
+}
+
+.pricing__plan .all__plans .plan .plan__details ul li:nth-of-type(1) {
+    margin-top: 3rem;
+    border-radius: 2rem 2rem 0rem 0;
+}
+
+.pricing__plan .plan .plan__details ul li:nth-of-type(7) {
+    border-bottom: none;
+    padding: 0rem;
+    margin: 0px;
+    border-radius: 0 0 2rem 0;
+}
+
+.pricing__plan .container .all__plans .plan .plan__details ul li input {
+    width: 100%;
+    background-color: gray;
+    border: none;
+    font-size: 1.9rem;
+    color: white;
+    padding: 1rem;
+    border-radius: 0 0 2rem 0;
+    cursor: pointer;
+}
+
+.pricing__plan .all__plans .plan:hover .plan__details ul li:nth-child(1) {
+    background-color: rgb(188, 105, 248);
+}
+
+.pricing__plan .all__plans .plan:hover .plan__details ul li input {
+    background-color: rgb(188, 105, 248);
+}
+
+.pricing__plan .all__plans .plan:hover .plan__details ul li:nth-child(1) h4 {
+    color: white;
+}
+
+.pricing__plan .all__plans .plan:hover .plan__details ul li:nth-child(1) span {
+    color: white;
+}
+
+.pricing__plan .all__plans .plan:hover .plan__details ul li:nth-child(1) sup {
+    color: white;
+}
+
+/* End Of Pricing Plan */
+
+/* Start Our Developers */
+
+.our__developers .developers__details {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.our__developers i {
+    color: #5b32b4;
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.our__developers .developers__details p {
+    font-size: 2rem;
+    line-height: 1.5em;
+    color: gray;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+.our__developers .developers__details span {
+    display: block;
+}
+
+.our__developers .developers__details .rate {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.our__developers .developers__details .rate i {
+    color: #f5d312;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.our__developers .developers__details .rate h4 {
+    color: #5b32b4;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.our__developers .developers__details .rate p {
+    font-size: 1.7rem;
+    color: gray;
+    text-align: center;
+}
+
+.our__developers .developers__images {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+.our__developers .developers__images img {
+    width: 8%;
+    border-radius: 50%;
+    border: solid .5rem white;
+    box-shadow: rgba(0, 0, 0, 0.068) 0 0 2rem .5rem;
+    margin: 0 2rem;
+}
+
+.our__developers .developers__images i {
+    margin: 3.5rem 2rem;
+    font-size: 2.3rem;
+    color: gray;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.our__developers .developers__images i:hover {
+    color: #5b32b4;
+    opacity: 1;
+}
+
+.our__developers .container .image__dots ul {
+    display: flex;
+    justify-content: center;
+}
+
+.our__developers .container .image__dots ul li {
+    margin: 0 1rem;
+    list-style: none;
+}
+
+.our__developers .container .image__dots ul li::after {
+    content: " ";
+    border-radius: 50%;
+    background-color: #fc3b7e;
+    background-color: transparent;
+    border: solid 0.2rem gray;
+    width: 1rem;
+    height: 1em;
+    display: block;
+    margin: 0 auto;
+}
+
+.our__developers .container .image__dots ul li:nth-child(3) {
+    background-color: #fc3b7e;
+    border-radius: 50%;
+}
+
+/* End Of Our Developers */
+
+/* Start Membershio */
+
+.membership {
+    background-image: url("../Assets/bg-img/welcome-bg.png");
+    background-position: center;
+    background-size: cover;
+    padding: 5rem;
+}
+
+.membership .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.membership .container .left h3, p {
+    text-align: left;
+    color: white;
+    justify-content: left;
+}
+
+.membership .container a[type="button"] {
+    background-color: white;
+    color: #fb397d;
+}
+
+/* End Of Membershio */
+
+/* Start Our Team */
+
+.our__team {
+    padding: 11rem 0;
+}
+
+.our__team .container {
+    display: flex;
+    margin-top: 4rem;
+}
+
+.our__team .container .our__team-images {
+    margin: 0 1rem;
+    width: 25%;
+}
+
+.our__team .container .our__team-images .img {
+    z-index: 1;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.our__team .container .our__team-images .img img {
+    width: 90%;
+    border-radius: 2.2rem 2.2rem 2.2rem 0;
+}
+
+.our__team .container .our__team-images p {
+    color: gray;
+}
+
+.our__team .container .our__team-images h3 {
+    margin: 0;
+}
+
+.our__team .container .our__team-images h3, p {
+    justify-content: left;
+}
+
+.our__team .container .our__team-images .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 99%;
+    width: 90%;
+    background-color: rgba(188, 105, 248, 0.637);
+    visibility: hidden;
+    border-radius: 2.2rem 2.2rem 2.2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.our__team .container .our__team-images .overlay .icons {
+    display: flex;
+    justify-content: center;
+}
+
+.our__team .container .our__team-images .overlay .icons a {
+    border-radius: 0.7rem 0.7rem 0.7rem 0;
+    background-color: rgb(188, 105, 248);
+    margin: 0 .5rem;
+    padding: 1rem 1rem 2.5rem 1rem;
+    width: 15%;
+    height: 15%;
+    text-decoration: none;
+}
+
+.our__team .container .our__team-images .overlay .icons a i {
+    font-size: 1.5rem;
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+
+.our__team .container .our__team-images:hover .overlay {
+    visibility: visible;
+    z-index: 2;
+}
+
+/* End Of Our Team */
+
+/* Start Footer */
+
+footer {
+    padding: 8rem 0;
+    background-color: #F5F9FC;
+}
+
+footer .container h2::after {
+    margin-left: 0;
+}
+
+footer .container .footer__content {
+    display: flex;
+}
+
+footer .container .footer__content .footer__data {
+    margin-top: 2rem;
+    width: 50%;
+}
+
+footer .container .footer__content .footer__data p:nth-child(2) {
+    width: 88%;
+    color: gray;
+    margin: 5rem 0;
+}
+
+footer .container .footer__content .footer__data p {
+    color: gray;
+    margin: 1rem;
+}
+
+footer .container .footer__content .footer__data span {
+    color: #5b32b4;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+footer .container .footer__content .form {
+    width: 50%;
+}
+
+footer .container .footer__content .form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+footer .container .footer__content .form form input {
+    border-radius: 2.2rem 2.2rem 2.2rem 0;
+    margin: 1rem 0;
+    padding: 2rem;
+    width: 100%;
+    border: solid 0.5px rgba(128, 128, 128, 0.295);
+}
+
+footer .container .footer__content .form form textarea {
+    height: 10rem;
+    resize: none;
+    border-radius: 2.2rem 2.2rem 2.2rem 0;
+    margin: 1rem 0;
+    padding: 2rem;
+    border: solid 0.5px rgba(128, 128, 128, 0.295);
+}
+
+footer .container .footer__content .form form input[type="button"] {
+    background-color: #fb397d;
+    color: white;
+    border-radius: 2.2rem 2.2rem 2.2rem 0;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    width: 30%;
+    cursor: pointer;
+    border: none;
+}
+
+footer .top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    width: 5%;
+    background-color: #fc3b7e;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+footer .top i {
+    color: white;
+    font-size: 2.4rem;
+}
+
+/* End Of Footer */
